@@ -5,3 +5,8 @@
     1. `index.php`
     1. `categorie.php`
     1. `recette.php`
+
+- Les données se trouvent dans le fichier `src/donnees.inc.php`.
+- Des saisies d'écrans se trouvent dans le dossier `_assets`.
+- Une version HTML de chaque page se trouve dans le dossier `_assets`.
+- Vous pouvez visionner la page terminée à l'adresse https://web4.tim-cstj.ca/recettes

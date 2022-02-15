@@ -29,7 +29,7 @@ $donnees = array(
         ),
 		'sauce_a_big_mac'=>array(
 			'titre'=>'Sauce à Big Mac',
-			'intro'=>'Tout le monde s\'endent pour dire qu\'ils sont; EXCELLENTS, DÉBILLES Ais-je besoin de vous dire combien j\'ai fait des p\'tits Heureux hier soir avec ces Big Mac maison!!',
+			'intro'=>'Tout le monde s\'entendent pour dire qu\'ils sont; EXCELLENTS, DÉBILLES Ais-je besoin de vous dire combien j\'ai fait des p\'tits Heureux hier soir avec ces Big Mac maison!!',
 			'description'=>'<p>Non sans blague le goût est identique!!</p><p>Pour les boulettes, j\'ai tout simplement pris de la viande hachée très très maigre dont j\'ai mélangé un sachet de soupe à l\'oignon ainsi que d\'un peu de thym et du poivre. J\'ai cuit et fait les hamburgers comme au Mc Do!! Bon ils ne sont pas aussi beaux mais ils goûtent pareille par exemple</p>',
 			'legende'=>'La vraie recette de sauce à Big Mac',
 			'ingredients'=>array(
@@ -38,7 +38,7 @@ $donnees = array(
 				array('quantite'=>'1', 'unite'=>'c à table', 'ingredient'=>'oignon haché', ),
 				array('quantite'=>'1', 'unite'=>'c à thé', 'ingredient'=>'vinaigre blanc', ),
 				array('quantite'=>'1', 'unite'=>'c à thé', 'ingredient'=>'sucre', ),
-				array('quantite'=>'<span class="fraction"><sup>1</sup>/<sub>8</sub></span>', 'unite'=>'c à thé', 'ingredient'=>'sel', ),
+				array('quantite'=>'1/8', 'unite'=>'c à thé', 'ingredient'=>'sel', ),
 				array('quantite'=>'2', 'unite'=>'c à table', 'ingredient'=>'vinaigrette française (orange)', ),
 			),
             'instructions'=>array(
