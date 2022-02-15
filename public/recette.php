@@ -8,7 +8,7 @@ Votre nom :
 Cette page affiche une recette en fonction de la catégorie et du id fournis dans l'adresse
 - Inclure le fichier de la class Recette
 - Inclure le fichier donnees.inc.php contenant les données des recettes (crée la variable $donnees)
-- Commencer par le fichier Recette.class.php
+- Commencer par le fichier Recette.php
 
 - Cette page s'attend à recevoir de l'adresse les données "nomCategorie" et "idRecette". Il faut donc récupérer ces données.
 - S'il manque une de ces deux données dans l'adresse, on DOIT retourner à la page index.php
@@ -16,7 +16,7 @@ Cette page affiche une recette en fonction de la catégorie et du id fournis dan
 - Si la recette ne se trouve pas dans la variable $donnees, on DOIT retourner à la page index.php
 =========================================================================
 */
-include_once("../src/Recette.class.php");
+include_once("../src/Recette.php");
 include_once("../src/donnees.inc.php");
 if (!isset($_GET['nomCategorie'])) {
 	header("location:index.php");

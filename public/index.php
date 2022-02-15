@@ -8,10 +8,10 @@ Votre nom :
 Cette page affiche la liste des recettes disponibles sur le site
 - Inclure le fichier de la class Recette
 - Inclure le fichier donnees.inc.php contenant les données des recettes (crée la variable $donnees)
-- Commencer par le fichier Recette.class.php
+- Commencer par le fichier Recette.php
 =========================================================================
 */
-include_once("../src/Recette.class.php");
+include_once("../src/Recette.php");
 include_once("../src/donnees.inc.php");
 ?><!DOCTYPE html>
 <html lang="fr">
