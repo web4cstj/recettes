@@ -1,3 +1,3 @@
 <footer>
-	<p>Travail fait par Rita Raté dans le cadre du cours "<a target="_blank" href="http://prof-tim.cstj.qc.ca/cours/web3">Intégration Web III</a>".</p>
+	<p>Travail fait par Rita Raté dans le cadre du cours "<a target="_blank" href="http://web4.tim-cstj.ca">Web 4 : Expressif (Logique)</a>".</p>
 </footer>

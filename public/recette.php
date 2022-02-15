@@ -1,16 +1,16 @@
 <?php
 /*
 =========================================================================
-Intégration web III - TP1 - Groupe du jeudi
+Web 4 : Expressif (Logique) - Devoir 1
 -------------------------------------------------------------------------
 Votre nom :
 -------------------------------------------------------------------------
-Cette page affiche une auto en fonction de la marque et de l'adresse fournis dans l'adresse
+Cette page affiche une recette en fonction de la catégorie et du id fournis dans l'adresse
 - Inclure le fichier de la class Recette
 - Inclure le fichier donnees.inc.php contenant les données des recettes (crée la variable $donnees)
 - Commencer par le fichier Recette.class.php
 
-- Cette page s'attend à recevoir de l'adresse les données "nomMarque" et "nomModele". Il faut donc récupérer ces données.
+- Cette page s'attend à recevoir de l'adresse les données "nomCategorie" et "idRecette". Il faut donc récupérer ces données.
 - S'il manque une de ces deux données dans l'adresse, on DOIT retourner à la page index.php
 - Récupérer la recette correspondante
 - Si la recette ne se trouve pas dans la variable $donnees, on DOIT retourner à la page index.php
