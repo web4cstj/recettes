@@ -1,0 +1,125 @@
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	margin: 0;
+	font-family: arial narrow, arial;
+}
+div.interface {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	& > header {
+		background-color: black;
+		color: white;
+	}
+	& > footer {
+		background-color: black;
+		color: white;
+		order: 1000;
+	}
+}
+div.body {
+	display: flex;
+}
+div.volet {
+	h1 {
+		margin: 0;
+	}
+	display: grid;
+	background-color: white;
+	width: 4.25in;
+	height: 11in;
+	//	margin: auto;
+	box-sizing: border-box;
+
+	padding: 0.25in;
+	font-size: 9.5pt;
+	table {
+		border-collapse: collapse;
+		width: 100%;
+	}
+	th,
+	td {
+		border: 1px solid hsl(0, 0, 70%);
+		border-style: solid none;
+		text-align: left;
+		font-weight: inherit;
+		* {
+			font: inherit;
+			margin: 0;
+		}
+	}
+	td.compile {
+		text-align: right;
+	}
+	td {
+		&[data-valeur] {
+			text-align: right;
+			&::after {
+				content: "/" attr(data-valeur);
+			}
+		}
+	}
+	tr.h1,
+	tr.h2,
+	tr.h3 {
+		font-weight: bold;
+	}
+	tr.h1 {
+		background-color: hsl(0, 0, 70%);
+		font-size: 1.5em;
+	}
+	tr.h2 {
+		background-color: hsl(0, 0, 80%);
+		font-size: 1.2em;
+	}
+	tr.h3 {
+		background-color: hsl(0, 0, 90%);
+		font-size: 1em;
+	}
+	.cochesValeur {
+		display: flex;
+		width: 100%;
+		justify-content: flex-end;
+		line-height: 1em;
+		& > * {
+			@extend .centrer;
+			font-size: 1em;
+			color: hsl(0, 0, 50%);
+			border: 1px solid;
+			//		border-radius: 100%;
+			flex: 0 0 1em;
+			border-right-width: 0;
+			&:first-child {
+				border-bottom-left-radius: 100%;
+				border-top-left-radius: 100%;
+			}
+			&:last-child {
+				border-bottom-right-radius: 100%;
+				border-top-right-radius: 100%;
+				border-right-width: 1px;
+			}
+		}
+	}
+}
+.centrer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+@media screen {
+	body {
+		background-color: black;
+	}
+}
+@media print {
+	div.interface {
+		header,
+		footer {
+			display: none;
+		}
+	}
+}

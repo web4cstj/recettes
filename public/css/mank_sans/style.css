@@ -1,0 +1,24 @@
+@font-face {
+    font-family: mank;
+    src: url("MankSans.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: mank;
+    src: url("MankSans-Oblique.ttf");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: mank;
+    src: url("MankSans-Medium.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: mank;
+    src: url("MankSans-MediumOblique.ttf");
+    font-weight: bold;
+    font-style: italic;
+}

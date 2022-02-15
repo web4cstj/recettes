@@ -1,0 +1,319 @@
+@charset "UTF-8";
+@import url(seaweed_fire_aoe/style.css);
+@import url(mank_sans/style.css);
+:root {
+  --couleur-hilight: #DE0000;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: mank, arial;
+  background-image: url(../images/fond.png);
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+span.fraction {
+  letter-spacing: -0.2ch;
+}
+span.fraction sub,
+span.fraction sup {
+  font-size: 0.6em;
+}
+span.fraction sub {
+  vertical-align: baseline;
+}
+
+ul,
+ol {
+  margin: 0;
+}
+
+header *,
+footer * {
+  margin: 0;
+}
+
+article {
+  color: black;
+  width: 25em;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0.1em solid var(--couleur-hilight);
+  border-radius: 1em;
+  padding: 1em 1em;
+  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.5);
+}
+article header {
+  background-color: var(--couleur-hilight);
+  padding: 0.25em;
+  color: white;
+}
+article p {
+  text-align: justify;
+}
+article p.intro {
+  font-weight: bold;
+  color: var(--couleur-hilight);
+  font-size: larger;
+}
+article h1 {
+  background-color: var(--couleur-hilight);
+  color: white;
+  margin-top: 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+article h2 {
+  font-size: 1.4rem;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  color: var(--couleur-hilight);
+  text-shadow: 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.5);
+}
+
+nav#ariane > ul {
+  margin: 0;
+  padding: 0.5em 0;
+  list-style-type: none;
+  display: flex;
+  font-size: 0.9rem;
+  justify-content: center;
+  text-shadow: 0 1px black;
+  font-weight: bold;
+}
+nav#ariane > ul > * + *:before {
+  content: "▹";
+  content: "▸";
+  margin: 0 0.5ch;
+}
+
+div.interface {
+  background-image: url(../images/poele.png);
+  background-repeat: no-repeat;
+  background-position: center -40px;
+  background-size: auto 15em;
+  display: flex;
+  flex-direction: column;
+}
+div.interface > header {
+  font-weight: bold;
+  padding: 0 0 1em;
+  text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.8);
+  line-height: 1;
+}
+div.interface > header > h1 {
+  font-size: 3.5em;
+  color: white;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: fire;
+}
+div.interface > header > h1 > a > * {
+  font-size: 2em;
+  color: var(--couleur-hilight);
+  vertical-align: middle;
+  margin-left: 0.3em;
+}
+div.interface > footer {
+  padding: 1em;
+  font-size: smaller;
+  text-align: center;
+  text-shadow: 0 1px black;
+}
+div.interface > footer p {
+  margin: 0;
+}
+div.interface > section {
+  flex: 1 1 auto;
+}
+
+ul.ingredients {
+  margin: 0;
+  padding: 0;
+}
+ul.ingredients > li {
+  padding: 0.25em 0;
+  display: flex;
+}
+ul.ingredients > li span {
+  flex: 1 0 0;
+}
+ul.ingredients > li > span.quantite {
+  flex: 0 0 3ch;
+  text-align: right;
+}
+ul.ingredients > li > span.unite {
+  flex: 0 0 7ch;
+  margin-left: 1ch;
+}
+ul.ingredients > li + li {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+ol.instructions {
+  padding-left: 3ch;
+}
+
+section.zzzzz {
+  display: flex;
+  margin-bottom: 1em;
+}
+section.zzzzz > * {
+  flex: 1 0 0;
+}
+section.zzzzz > aside, section.zzzzz > section {
+  flex: 0 0 160px;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-right: 1em;
+}
+section.zzzzz > aside nav, section.zzzzz > section nav {
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+section.zzzzz > aside nav a, section.zzzzz > section nav a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 0.2em 0;
+}
+section.zzzzz > aside nav a:hover, section.zzzzz > section nav a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+section.zzzzz > aside nav h1,
+section.zzzzz > aside nav h2,
+section.zzzzz > aside nav h3,
+section.zzzzz > aside nav h4,
+section.zzzzz > aside nav h5,
+section.zzzzz > aside nav h6,
+section.zzzzz > aside nav header, section.zzzzz > section nav h1,
+section.zzzzz > section nav h2,
+section.zzzzz > section nav h3,
+section.zzzzz > section nav h4,
+section.zzzzz > section nav h5,
+section.zzzzz > section nav h6,
+section.zzzzz > section nav header {
+  background-color: var(--couleur-hilight);
+  color: white;
+  font-size: 18px;
+  margin: 0 0 10px;
+  text-align: center;
+}
+section.zzzzz > aside nav ul,
+section.zzzzz > aside nav ol, section.zzzzz > section nav ul,
+section.zzzzz > section nav ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+figure.photoprincipale {
+  padding: 1em 1em 0.25em;
+  background-color: white;
+  color: var(--couleur-hilight);
+  text-align: center;
+  box-shadow: 0 0 3em;
+  margin: 2em auto;
+  width: 20em;
+  box-sizing: border-box;
+}
+figure > figcaption {
+  font-weight: bold;
+  font-size: smaller;
+}
+figure > img {
+  border: 1px solid var(--couleur-hilight);
+  width: 100%;
+}
+
+article > ul {
+  font-size: 1.2em;
+}
+
+ul.recettes {
+  list-style-type: none;
+  padding: 0.5em;
+}
+ul.recettes > li > a {
+  display: flex;
+}
+ul.recettes > li > a > span {
+  display: flex;
+  align-items: center;
+}
+ul.recettes > li > a > span + span {
+  margin-left: 0.5em;
+}
+ul.recettes > li + * {
+  margin-top: 0.5em;
+}
+
+ul.categories {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+ul.categories > li > div {
+  color: var(--couleur-hilight);
+  font-weight: bold;
+  padding: 0.5em 0.25em 0;
+  border-bottom: 1px solid;
+}
+
+span.vignette {
+  width: 2em;
+  height: 2em;
+  display: inline-block;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50%;
+}
+
+@media (min-aspect-ratio: 3/4) {
+  html {
+    font-size: 2.4vh;
+  }
+}
+@media (max-aspect-ratio: 3/4) {
+  html {
+    font-size: 3.2vw;
+  }
+}
+@media (min-aspect-ratio: 4/3) {
+  html {
+    font-size: 1.5vw;
+  }
+
+  article {
+    width: 40em;
+  }
+
+  figure.photoprincipale {
+    width: 20em;
+  }
+}
+@media (max-aspect-ratio: 4/3) {
+  article {
+    width: 75vw;
+  }
+
+  figure.photoprincipale {
+    width: 20em;
+  }
+}
+
+/*# sourceMappingURL=recettes.css.map */
