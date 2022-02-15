@@ -15,39 +15,34 @@ Cette page affiche la liste des recettes en fonction de la catégorie fournie da
 - Si la catégorie ne se trouve pas dans la variable $donnees, on DOIT retourner à la page index.php
 =========================================================================
 */
-include_once("../src/Recette.php");
-include_once("../src/donnees.inc.php");
-if (!isset($_GET['nomCategorie'])) {
-	header("location:index.php");
-	exit;
-}
-$nomCategorie = $_GET['nomCategorie'];
-if (!isset($donnees[$nomCategorie])) {
-	header("location:index.php");
-	exit;
-}
-$categorie = $donnees[$nomCategorie];
+
+
+
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
 	<meta charset="UTF-8" />
 	<link rel="stylesheet" href="css/recettes.css" />
 	<!-- /* Afficher le nom de la catégorie dans le title */ -->
-	<title><?php echo $nomCategorie; ?></title>
+	<title> </title>
 </head>
 
 <body>
 	<div class="interface">
 		<!-- /* Inclure l'entête ici */ -->
-		<?php include("../components/header.php") ?>
+		
+		
 		<!-- /* Faire afficher le fil d'Ariane ici */ -->
-        <?php echo Recette::ariane($nomCategorie); ?>
+        
+		
 		<section class="body">
 			<!-- /* Faire afficher l'article ici */ -->
-			<?php echo Recette::articleCategorie($nomCategorie, $donnees[$nomCategorie]) ?>
+			
+			
 		</section>
 		<!-- /* Inclure le pied de page ici */ -->
-		<?php include("../components/footer.php") ?>
+		
+		
 	</div>
 </body>
 

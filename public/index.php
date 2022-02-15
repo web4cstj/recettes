@@ -11,8 +11,6 @@ Cette page affiche la liste des recettes disponibles sur le site
 - Commencer par le fichier Recette.php
 =========================================================================
 */
-include_once("../src/Recette.php");
-include_once("../src/donnees.inc.php");
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -24,15 +22,19 @@ include_once("../src/donnees.inc.php");
 <body>
 	<div class="interface">
 		<!-- /* Inclure l'entête ici */ -->
-		<?php include("../components/header.php"); ?>
+		
+		
 		<!-- /* Faire afficher le fil d'Ariane ici */ -->
-        <?php echo Recette::ariane(); ?>
+        
+		
 		<section class="body">
 			<!-- /* Faire afficher l'article ici */ -->
-			<?php echo Recette::articleIndex($donnees); ?>
+			
+			
 		</section>
 		<!-- /* Inclure le pied de page ici */ -->
-		<?php include("../components/footer.php"); ?>
+		
+		
 	</div>
 </body>
 

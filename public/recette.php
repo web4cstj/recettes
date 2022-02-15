@@ -16,45 +16,33 @@ Cette page affiche une recette en fonction de la catégorie et du id fournis dan
 - Si la recette ne se trouve pas dans la variable $donnees, on DOIT retourner à la page index.php
 =========================================================================
 */
-include_once("../src/Recette.php");
-include_once("../src/donnees.inc.php");
-if (!isset($_GET['nomCategorie'])) {
-	header("location:index.php");
-	exit;
-}
-$nomCategorie = $_GET['nomCategorie'];
-if (!isset($_GET['idRecette'])) {
-	header("location:index.php");
-	exit;
-}
-$idRecette = $_GET['idRecette'];
-$recette = Recette::trouverRecette($donnees, $nomCategorie, $idRecette);
-if (!$recette) {
-	header("location:index.php");
-//	header("categorie.php?nomCategorie=$nomCategorie");
-	exit;
-}
+
+
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
 	<meta charset="UTF-8" />
 	<link rel="stylesheet" href="css/recettes.css" />
 	<!-- /* Faire afficher le titre de la recette ici (dans un title); */ -->
-	<title><?php echo $recette['titre'] ?></title>
+	<title> </title>
 </head>
 
 <body>
 	<div class="interface">
 		<!-- /* Inclure l'entête ici */ -->
-		<?php include("../components/header.php") ?>
+		
+		
 		<!-- /* Faire afficher le fil d'Ariane ici */ -->
-        <?php echo Recette::ariane($nomCategorie, $recette['titre']) ?>
+        
+		
 		<section class="body">
 			<!-- /* Faire afficher l'article ici */ -->
-			<?php echo Recette::articleRecette($idRecette, $recette) ?>
+			
+			
 		</section>
 		<!-- /* Inclure le pied de page ici */ -->
-		<?php include("../components/footer.php") ?>
+		
+		
 	</div>
 </body>
 
